@@ -1,0 +1,30 @@
+{
+    "test_scenarios": [
+        {
+            "scenario_name": "Calculate Total Sales",
+            "scenario_prompt": [
+                {
+                    "role": "user",
+                    "message": "Show me how to do sum of sales. ONLY return the dax query, don't need to include a measure name. Start your response with CALCULATE( and end it with )\n\nKeep in mind my data structure is as follows, via the PBIT file I uploaded:\n\n## Tables and Columns\n\n### customer\n- CustomerKey\n- GeoAreaKey\n- StartDT\n- EndDT\n- Continent\n- Gender\n- Title\n- GivenName\n- MiddleInitial\n- Surname\n- StreetAddress\n- City\n- State\n- StateFull\n- ZipCode\n- Country\n- CountryFull\n- Birthday\n- Age\n- Occupation\n- Company\n- Vehicle\n- Latitude\n- Longitude\n\n### sales\n- OrderKey\n- LineNumber\n- OrderDate\n- DeliveryDate\n- CustomerKey\n- StoreKey\n- ProductKey\n- Quantity\n- UnitPrice\n- NetPrice\n- UnitCost\n- CurrencyCode\n- ExchangeRate\n\n### date\n- Date\n- DateKey\n- Year\n- YearQuarter\n- YearQuarterNumber\n- Quarter\n- YearMonth\n- YearMonthShort\n- YearMonthNumber\n- Month\n- MonthShort\n- MonthNumber\n- DayofWeek\n- DayofWeekShort\n- DayofWeekNumber\n- WorkingDay\n- WorkingDayNumber\n\n## Relationships\n- sales[CustomerKey] many to one customer[CustomerKey]\n- sales[DeliveryDate] many to one date[Date]\n"
+                }
+            ],
+            "expected_results": [
+                219519054.316953,
+                219519054.32,
+                64818102.7646762
+            ]
+        },
+        {
+            "scenario_name": "Calculate Marketing Investment",
+            "scenario_prompt": [
+                {
+                    "role": "user",
+                    "message": "How can I calculate marketing investment for each customer, considering their total sales and a dynamic investment rate based on their sales performance? I'd like to get marketing investment dollars based on if a customer is over the average customer sales. If it is over give it 0.03 * their sales for investment. Otherwise 0.01 * their sales. ONLY return the dax query, don't need to include a measure name. Start your response with CALCULATE( and end it with )\n\nKeep in mind my data structure is as follows, via the PBIT file I uploaded:\n\n## Tables and Columns\n\n### customer\n- CustomerKey\n- GeoAreaKey\n- StartDT\n- EndDT\n- Continent\n- Gender\n- Title\n- GivenName\n- MiddleInitial\n- Surname\n- StreetAddress\n- City\n- State\n- StateFull\n- ZipCode\n- Country\n- CountryFull\n- Birthday\n- Age\n- Occupation\n- Company\n- Vehicle\n- Latitude\n- Longitude\n\n### sales\n- OrderKey\n- LineNumber\n- OrderDate\n- DeliveryDate\n- CustomerKey\n- StoreKey\n- ProductKey\n- Quantity\n- UnitPrice\n- NetPrice\n- UnitCost\n- CurrencyCode\n- ExchangeRate\n\n### date\n- Date\n- DateKey\n- Year\n- YearQuarter\n- YearQuarterNumber\n- Quarter\n- YearMonth\n- YearMonthShort\n- YearMonthNumber\n- Month\n- MonthShort\n- MonthNumber\n- DayofWeek\n- DayofWeekShort\n- DayofWeekNumber\n- WorkingDay\n- WorkingDayNumber\n\n## Relationships\n- sales[CustomerKey] many to one customer[CustomerKey]\n- sales[DeliveryDate] many to one date[Date]\n"
+                }
+            ],
+            "expected_results": [
+                1614316.509836306
+            ]
+        }
+    ]
+}

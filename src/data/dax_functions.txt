@@ -1,0 +1,365 @@
+APPROXIMATEDISTINCTCOUNT: Returns an estimated count of unique values in a column.
+AVERAGE: Returns the average (arithmetic mean) of all the numbers in a column.
+AVERAGEA: Returns the average (arithmetic mean) of the values in a column.
+AVERAGEX: Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.
+COUNT: Counts the number of rows in the specified column that contain non-blank values.
+COUNTA: Counts the number of rows in the specified column that contain non-blank values.
+COUNTAX: Counts non-blank results when evaluating the result of an expression over a table.
+COUNTBLANK: Counts the number of blank cells in a column.
+COUNTROWS: Counts the number of rows in the specified table, or in a table defined by an expression.
+COUNTX: Counts the number of rows that contain a number or an expression that evaluates to a number, when evaluating an expression over a table.
+DISTINCTCOUNT: Counts the number of distinct values in a column.
+DISTINCTCOUNTNOBLANK: Counts the number of distinct values in a column.
+MAX: Returns the largest numeric value in a column, or between two scalar expressions.
+MAXA: Returns the largest value in a column.
+MAXX: Evaluates an expression for each row of a table and returns the largest numeric value.
+MIN: Returns the smallest numeric value in a column, or between two scalar expressions.
+MINA: Returns the smallest value in a column, including any logical values and numbers represented as text.
+MINX: Returns the smallest numeric value that results from evaluating an expression for each row of a table.
+PRODUCT: Returns the product of the numbers in a column.
+PRODUCTX: Returns the product of an expression evaluated for each row in a table.
+SUM: Adds all the numbers in a column.
+SUMX: Returns the sum of an expression evaluated for each row in a table.
+CALENDAR: Returns a table with a single column named "Date" that contains a contiguous set of dates.
+CALENDARAUTO: Returns a table with a single column named "Date" that contains a contiguous set of dates.
+DATE: Returns the specified date in datetime format.
+DATEDIFF: Returns the number of interval boundaries between two dates.
+DATEVALUE: Converts a date in the form of text to a date in datetime format.
+DAY: Returns the day of the month, a number from 1 to 31.
+EDATE: Returns the date that is the indicated number of months before or after the start date.
+EOMONTH: Returns the date in datetime format of the last day of the month, before or after a specified number of months.
+HOUR: Returns the hour as a number from 0 (1200 A.M.) to 23 (1100 P.M.).
+MINUTE: Returns the minute as a number from 0 to 59, given a date and time value.
+MONTH: Returns the month as a number from 1 (January) to 12 (December).
+NETWORKDAYS: Returns the number of whole workdays between two dates.
+NOW: Returns the current date and time in datetime format.
+QUARTER: Returns the quarter as a number from 1 to 4.
+SECOND: Returns the seconds of a time value, as a number from 0 to 59.
+TIME: Converts hours, minutes, and seconds given as numbers to a time in datetime format.
+TIMEVALUE: Converts a time in text format to a time in datetime format.
+TODAY: Returns the current date.
+UTCNOW: Returns the current UTC date and time
+UTCTODAY: Returns the current UTC date.
+WEEKDAY: Returns a number from 1 to 7 identifying the day of the week of a date.
+WEEKNUM: Returns the week number for the given date and year according to the return_type value.
+YEAR: Returns the year of a date as a four digit integer in the range 1900-9999.
+YEARFRAC: Calculates the fraction of the year represented by the number of whole days between two dates.
+ALL: Returns all the rows in a table, or all the values in a column, ignoring any filters that might have been applied.
+ALLCROSSFILTERED: Clear all filters which are applied to a table.
+ALLEXCEPT: Removes all context filters in the table except filters that have been applied to the specified columns.
+ALLNOBLANKROW: From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist.
+ALLSELECTED: Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.
+CALCULATE: Evaluates an expression in a modified filter context.
+CALCULATETABLE: Evaluates a table expression in a modified filter context.
+EARLIER: Returns the current value of the specified column in an outer evaluation pass of the mentioned column.
+EARLIEST: Returns the current value of the specified column in an outer evaluation pass of the specified column.
+FILTER: Returns a table that represents a subset of another table or expression.
+FIRST: Used in visual calculations only. Retrieves a value in the visual matrix from the first row of an axis.
+INDEX: Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis.
+KEEPFILTERS: Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.
+LAST: Used in visual calculations only. Retrieves a value in the visual matrix from the last row of an axis.
+LOOKUPVALUE: Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.
+MATCHBY: In window functions, defines the columns that are used to determine how to match data and identify the current row.
+MOVINGAVERAGE: Returns a moving average calculated along the given axis of the visual matrix.
+NEXT: Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.
+OFFSET: Returns a single row that is positioned either before or after the current row within the same table, by a given offset.
+ORDERBY: Defines the columns that determine the sort order within each of a window function’s partitions.
+PARTITIONBY: Defines the columns that are used to partition a window function’s relation parameter.
+PREVIOUS: Used in visual calculations only. Retrieves a value in the previous row of an axis in the visual matrix.
+RANGE: Returns an interval of rows within the given axis, relative to the current row. A shortcut for WINDOW.
+RANK: Returns the ranking of a row within the given interval.
+REMOVEFILTERS: Clears filters from the specified tables or columns.
+ROWNUMBER: Returns the unique ranking of a row within the given interval.
+RUNNINGSUM: Returns a running sum calculated along the given axis of the visual matrix.
+SELECTEDVALUE: Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.
+WINDOW: Returns multiple rows which are positioned within the given interval.
+ACCRINT: Returns the accrued interest for a security that pays periodic interest.
+ACCRINTM: Returns the accrued interest for a security that pays interest at maturity.
+AMORDEGRC: Returns the depreciation for each accounting period. Similar to AMORLINC, except a depreciation coefficient is applied depending on the life of the assets.
+AMORLINC: Returns the depreciation for each accounting period.
+COUPDAYBS: Returns the number of days from the beginning of a coupon period until its settlement date.
+COUPDAYS: Returns the number of days in the coupon period that contains the settlement date.
+COUPDAYSNC: Returns the number of days from the settlement date to the next coupon date.
+COUPNCD: Returns the next coupon date after the settlement date.
+COUPNUM: Returns the number of coupons payable between the settlement date and maturity date, rounded up to the nearest whole coupon.
+COUPPCD: Returns the previous coupon date before the settlement date.
+CUMIPMT: Returns the cumulative interest paid on a loan between start_period and end_period.
+CUMPRINC: Returns the cumulative principal paid on a loan between start_period and end_period.
+DB: Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
+DDB: Returns the depreciation of an asset for a specified period using the double-declining balance method or some other method you specify.
+DISC: Returns the discount rate for a security.
+DOLLARDE: Converts a dollar price expressed as an integer part and a fraction part, such as 1.02, into a dollar price expressed as a decimal number.
+DOLLARFR: Converts a dollar price expressed as an integer part and a fraction part, such as 1.02, into a dollar price expressed as a decimal number.
+DURATION: Returns the Macauley duration for an assumed par value of $100.
+EFFECT: Returns the effective annual interest rate, given the nominal annual interest rate and the number of compounding periods per year.
+FV: Calculates the future value of an investment based on a constant interest rate.
+INTRATE: Returns the interest rate for a fully invested security.
+IPMT: Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.
+ISPMT: Calculates the interest paid (or received) for the specified period of a loan (or investment) with even principal payments.
+MDURATION: Returns the modified Macauley duration for a security with an assumed par value of $100.
+NOMINAL: Returns the nominal annual interest rate, given the effective rate and the number of compounding periods per year.
+NPER: Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
+ODDFPRICE: Returns the price per $100 face value of a security having an odd (short or long) first period.
+ODDFYIELD: Returns the yield of a security that has an odd (short or long) first period.
+ODDLPRICE: Returns the price per $100 face value of a security having an odd (short or long) last coupon period.
+ODDLYIELD: Returns the yield of a security that has an odd (short or long) last period.
+PDURATION: Returns the number of periods required by an investment to reach a specified value.
+PMT: Calculates the payment for a loan based on constant payments and a constant interest rate.
+PPMT: Returns the payment on the principal for a given period for an investment based on periodic, constant payments and a constant interest rate.
+PRICE: Returns the price per $100 face value of a security that pays periodic interest.
+PRICEDISC: Returns the price per $100 face value of a discounted security.
+PRICEMAT: Returns the price per $100 face value of a security that pays interest at maturity.
+PV: Calculates the present value of a loan or an investment, based on a constant interest rate.
+RATE: Returns the interest rate per period of an annuity.
+RECEIVED: Returns the amount received at maturity for a fully invested security.
+RRI: Returns an equivalent interest rate for the growth of an investment.
+SLN: Returns the straight-line depreciation of an asset for one period.
+SYD: Returns the sum-of-years' digits depreciation of an asset for a specified period.
+TBILLEQ: Returns the bond-equivalent yield for a Treasury bill.
+TBILLPRICE: Returns the price per $100 face value for a Treasury bill.
+TBILLYIELD: Returns the yield for a Treasury bill.
+VDB: Returns the depreciation of an asset for any period you specify, including partial periods, using the double-declining balance method or some other method you specify.
+XIRR: Returns the internal rate of return for a schedule of cash flows that is not necessarily periodic.
+XNPV: Returns the present value for a schedule of cash flows that is not necessarily periodic.
+YIELD: Returns the yield on a security that pays periodic interest.
+YIELDDISC: Returns the annual yield for a discounted security.
+YIELDMAT: Returns the annual yield of a security that pays interest at maturity.
+COLUMNSTATISTICS: Returns a table of statistics regarding every column in every table in the model.
+CONTAINS: Returns true if values for all referred columns exist, or are contained, in those columns; otherwise, the function returns false.
+CONTAINSROW: Returns TRUE if a row of values exists or contained in a table, otherwise returns FALSE.
+CONTAINSSTRING: Returns TRUE or FALSE indicating whether one string contains another string.
+CONTAINSSTRINGEXACT: Returns TRUE or FALSE indicating whether one string contains another string.
+CUSTOMDATA: Returns the content of the CustomData property in the connection string.
+HASONEFILTER: Returns TRUE when the number of directly filtered values on columnName is one; otherwise returns FALSE.
+HASONEVALUE: Returns TRUE when the context for columnName has been filtered down to one distinct value only. Otherwise is FALSE.
+ISAFTER: A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.
+ISBLANK: Checks whether a value is blank, and returns TRUE or FALSE.
+ISCROSSFILTERED: Returns TRUE when columnName or another column in the same or related table is being filtered.
+ISEMPTY: Checks if a table is empty.
+ISERROR: Checks whether a value is an error, and returns TRUE or FALSE.
+ISEVEN: Returns TRUE if number is even, or FALSE if number is odd.
+ISFILTERED: Returns TRUE when columnName is being filtered directly.
+ISINSCOPE: Returns true when the specified column is the level in a hierarchy of levels.
+ISLOGICAL: Checks whether a value is a logical value, (TRUE or FALSE), and returns TRUE or FALSE.
+ISNONTEXT: Checks if a value is not text (blank cells are not text), and returns TRUE or FALSE.
+ISNUMBER: Checks whether a value is a number, and returns TRUE or FALSE.
+ISODD: Returns TRUE if number is odd, or FALSE if number is even.
+ISONORAFTER: A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.
+ISSELECTEDMEASURE: Used by expressions for calculation items to determine the measure that is in context is one of those specified in a list of measures.
+ISSUBTOTAL: Creates another column in a SUMMARIZE expression that returns True if the row contains subtotal values for the column given as argument, otherwise returns False.
+ISTEXT: Checks if a value is text, and returns TRUE or FALSE.
+NONVISUAL: Marks a value filter in a SUMMARIZECOLUMNS expression as non-visual.
+SELECTEDMEASURE: Used by expressions for calculation items to reference the measure that is in context.
+SELECTEDMEASUREFORMATSTRING: Used by expressions for calculation items to retrieve the format string of the measure that is in context.
+SELECTEDMEASURENAME: Used by expressions for calculation items to determine the measure that is in context by name.
+USERCULTURE: Returns the locale for the current user.
+USERNAME: Returns the domain name and username from the credentials given to the system at connection time.
+USEROBJECTID: Returns the current user's Object ID or SID.
+USERPRINCIPALNAME: Returns the user principal name.
+AND: Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE.
+BITAND: Returns a bitwise 'AND' of two numbers.
+BITLSHIFT: Returns a number shifted left by the specified number of bits.
+BITOR: Returns a bitwise 'OR' of two numbers.
+BITRSHIFT: Returns a number shifted right by the specified number of bits.
+BITXOR: Returns a bitwise 'XOR' of two numbers.
+COALESCE: Returns the first expression that does not evaluate to BLANK.
+FALSE: Returns the logical value FALSE.
+IF: Checks a condition, and returns one value when TRUE, otherwise it returns a second value.
+IF.EAGER: Checks a condition, and returns one value when TRUE, otherwise it returns a second value. Uses an eager execution plan which always executes the branch expressions regardless of the condition expression.
+IFERROR: Evaluates an expression and returns a specified value if the expression returns an error
+NOT: Changes FALSE to TRUE, or TRUE to FALSE.
+OR: Checks whether one of the arguments is TRUE to return TRUE.
+SWITCH: Evaluates an expression against a list of values and returns one of multiple possible result expressions.
+TRUE: Returns the logical value TRUE.
+ABS: Returns the absolute value of a number.
+ACOS: Returns the arccosine, or inverse cosine, of a number.
+ACOSH: Returns the inverse hyperbolic cosine of a number.
+ACOT: Returns the arccotangent, or inverse cotangent, of a number.
+ACOTH: Returns the inverse hyperbolic cotangent of a number.
+ASIN: Returns the arcsine, or inverse sine, of a number.
+ASINH: Returns the inverse hyperbolic sine of a number.
+ATAN: Returns the arctangent, or inverse tangent, of a number.
+ATANH: Returns the inverse hyperbolic tangent of a number.
+CEILING: Rounds a number up, to the nearest integer or to the nearest multiple of significance.
+CONVERT: Converts an expression of one data type to another.
+COS: Returns the cosine of the given angle.
+COSH: Returns the hyperbolic cosine of a number.
+COT: Returns the cotangent of an angle specified in radians.
+COTH: Returns the hyperbolic cotangent of a hyperbolic angle.
+CURRENCY: Evaluates the argument and returns the result as currency data type.
+DEGREES: Converts radians into degrees.
+DIVIDE: Performs division and returns alternate result or BLANK() on division by 0.
+EVEN: Returns number rounded up to the nearest even integer.
+EXP: Returns e raised to the power of a given number.
+FACT: Returns the factorial of a number, equal to the series 1*2*3*...* , ending in the given number.
+FLOOR: Rounds a number down, toward zero, to the nearest multiple of significance.
+GCD: Returns the greatest common divisor of two or more integers.
+INT: Rounds a number down to the nearest integer.
+ISO.CEILING: Rounds a number up, to the nearest integer or to the nearest multiple of significance.
+LCM: Returns the least common multiple of integers.
+LN: Returns the natural logarithm of a number.
+LOG: Returns the logarithm of a number to the base you specify.
+LOG10: Returns the base-10 logarithm of a number.
+MOD: Returns the remainder after a number is divided by a divisor. The result always has the same sign as the divisor.
+MROUND: Returns a number rounded to the desired multiple.
+ODD: Returns number rounded up to the nearest odd integer.
+PI: Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
+POWER: Returns the result of a number raised to a power.
+QUOTIENT: Performs division and returns only the integer portion of the division result.
+RADIANS: Converts degrees to radians.
+RAND: Returns a random number greater than or equal to 0 and less than 1, evenly distributed.
+RANDBETWEEN: Returns a random number in the range between two numbers you specify.
+ROUND: Rounds a number to the specified number of digits.
+ROUNDDOWN: Rounds a number down, toward zero.
+ROUNDUP: Rounds a number up, away from 0 (zero).
+SIGN: Determines the sign of a number, the result of a calculation, or a value in a column.
+SIN: Returns the sine of the given angle.
+SINH: Returns the hyperbolic sine of a number.
+SQRT: Returns the square root of a number.
+SQRTPI: Returns the square root of (number * pi).
+TAN: Returns the tangent of the given angle.
+TANH: Returns the hyperbolic tangent of a number.
+TRUNC: Truncates a number to an integer by removing the decimal, or fractional, part of the number.
+BLANK: Returns a blank.
+ERROR: Raises an error with an error message.
+EVALUATEANDLOG: Returns the value of the first argument and logs it in a DAX Evaluation Log profiler event.
+TOCSV: Returns a table as a string in CSV format.
+TOJSON: Returns a table as a string in JSON format.
+PATH: Returns a delimited text string with the identifiers of all the parents of the current identifier.
+PATHCONTAINS: Returns TRUE if the specified item exists within the specified path.
+PATHITEM: Returns the item at the specified position from a string resulting from evaluation of a PATH function.
+PATHITEMREVERSE: Returns the item at the specified position from a string resulting from evaluation of a PATH function.
+PATHLENGTH: Returns the number of parents to the specified item in a given PATH result, including self.
+CROSSFILTER: Specifies the cross-filtering direction to be used in a calculation for a relationship that exists between two columns.
+RELATED: Returns a related value from another table.
+RELATEDTABLE: Evaluates a table expression in a context modified by the given filters.
+USERELATIONSHIP: Specifies the relationship to be used in a specific calculation as the one that exists between columnName1 and columnName2.
+BETA.DIST: Returns the beta distribution.
+BETA.INV: Returns the inverse of the beta cumulative probability density function (BETA.DIST).
+CHISQ.DIST: Returns the chi-squared distribution.
+CHISQ.DIST.RT: Returns the right-tailed probability of the chi-squared distribution.
+CHISQ.INV: Returns the inverse of the left-tailed probability of the chi-squared distribution.
+CHISQ.INV.RT: Returns the inverse of the right-tailed probability of the chi-squared distribution.
+COMBIN: Returns the number of combinations for a given number of items.
+COMBINA: Returns the number of combinations (with repetitions) for a given number of items.
+CONFIDENCE.NORM: The confidence interval is a range of values.
+CONFIDENCE.T: Returns the confidence interval for a population mean, using a Student's t distribution.
+EXPON.DIST: Returns the exponential distribution.
+GEOMEAN: Returns the geometric mean of the numbers in a column.
+GEOMEANX: Returns the geometric mean of an expression evaluated for each row in a table.
+LINEST: Uses the Least Squares method to calculate a straight line that best fits the given data.
+LINESTX: Uses the Least Squares method to calculate a straight line that best fits the given data. The data result from expressions evaluated for each row in a table.
+MEDIAN: Returns the median of numbers in a column.
+MEDIANX: Returns the median number of an expression evaluated for each row in a table.
+NORM.DIST: Returns the normal distribution for the specified mean and standard deviation.
+NORM.INV: The inverse of the normal cumulative distribution for the specified mean and standard deviation.
+NORM.S.DIST: Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
+NORM.S.INV: Returns the inverse of the standard normal cumulative distribution.
+PERCENTILE.EXC: Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.
+PERCENTILE.INC: Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.
+PERCENTILEX.EXC: Returns the percentile number of an expression evaluated for each row in a table.
+PERCENTILEX.INC: Returns the percentile number of an expression evaluated for each row in a table.
+PERMUT: Returns the number of permutations for a given number of objects that can be selected from number objects.
+POISSON.DIST: Returns the Poisson distribution.
+RANK.EQ: Returns the ranking of a number in a list of numbers.
+RANKX: Returns the ranking of a number in a list of numbers for each row in the table argument.
+SAMPLE: Returns a sample of N rows from the specified table.
+STDEV.P: Returns the standard deviation of the entire population.
+STDEV.S: Returns the standard deviation of a sample population.
+STDEVX.P: Returns the standard deviation of the entire population.
+STDEVX.S: Returns the standard deviation of a sample population.
+T.DIST: Returns the Student's left-tailed t-distribution.
+T.DIST.2T: Returns the two-tailed Student's t-distribution.
+T.DIST.RT: Returns the right-tailed Student's t-distribution.
+T.INV: Returns the left-tailed inverse of the Student's t-distribution.
+T.INV.2t: Returns the two-tailed inverse of the Student's t-distribution.
+VAR.P: Returns the variance of the entire population.
+VAR.S: Returns the variance of a sample population.
+VARX.P: Returns the variance of the entire population.
+VARX.S: Returns the variance of a sample population.
+ADDCOLUMNS: Adds calculated columns to the given table or table expression.
+ADDMISSINGITEMS: Adds combinations of items from multiple columns to a table if they do not already exist.
+CROSSJOIN: Returns a table that contains the Cartesian product of all rows from all tables in the arguments.
+CURRENTGROUP: Returns a set of rows from the table argument of a GROUPBY expression.
+DATATABLE: Provides a mechanism for declaring an inline set of data values.
+DETAILROWS: Evaluates a Detail Rows Expression defined for a measure and returns the data.
+DISTINCT column: Returns a one-column table that contains the distinct values from the specified column.
+DISTINCT table: Returns a table by removing duplicate rows from another table or expression.
+EXCEPT: Returns the rows of one table which do not appear in another table.
+FILTERS: Returns a table of values directly applied as filters to columnName.
+GENERATE: Returns a table with the Cartesian product between each row in table1 and the table that results from evaluating table2 in the context of the current row from table1.
+GENERATEALL: Returns a table with the Cartesian product between each row in table1 and the table that results from evaluating table2 in the context of the current row from table1.
+GENERATESERIES: Returns a single column table containing the values of an arithmetic series.
+GROUPBY: Similar to the SUMMARIZE function, GROUPBY does not do an implicit CALCULATE for any extension columns that it adds.
+IGNORE: Modifies SUMMARIZECOLUMNS by omitting specific expressions from the BLANK/NULL evaluation.
+INTERSECT: Returns the row intersection of two tables, retaining duplicates.
+NATURALINNERJOIN: Performs an inner join of a table with another table.
+NATURALLEFTOUTERJOIN: Performs a join of the LeftTable with the RightTable.
+ROLLUP: Modifies the behavior of SUMMARIZE by adding rollup rows to the result on columns defined by the groupBy_columnName parameter.
+ROLLUPADDISSUBTOTAL: Modifies the behavior of SUMMARIZECOLUMNS by adding rollup/subtotal rows to the result based on the groupBy_columnName columns.
+ROLLUPISSUBTOTAL: Pairs rollup groups with the column added by ROLLUPADDISSUBTOTAL within an ADDMISSINGITEMS expression.
+ROLLUPGROUP: Modifies the behavior of SUMMARIZE and SUMMARIZECOLUMNS by adding rollup rows to the result on columns defined by the the groupBy_columnName parameter.
+ROW: Returns a table with a single row containing values that result from the expressions given to each column.
+SELECTCOLUMNS: Adds calculated columns to the given table or table expression.
+SUBSTITUTEWITHINDEX: Returns a table which represents a left semijoin of the two tables supplied as arguments.
+SUMMARIZE: Returns a summary table for the requested totals over a set of groups.
+SUMMARIZECOLUMNS: Returns a summary table over a set of groups.
+Table Constructor: Returns a table of one or more columns.
+TOPN: Returns the top N rows of the specified table.
+TREATAS: Applies the result of a table expression as filters to columns from an unrelated table.
+UNION: Creates a union (join) table from a pair of tables.
+VALUES: Returns a one-column table that contains the distinct values from the specified table or column.
+COMBINEVALUES: Joins two or more text strings into one text string.
+CONCATENATE: Joins two text strings into one text string.
+CONCATENATEX: Concatenates the result of an expression evaluated for each row in a table.
+EXACT: Compares two text strings and returns TRUE if they are exactly the same, FALSE otherwise.
+FIND: Returns the starting position of one text string within another text string.
+FIXED: Rounds a number to the specified number of decimals and returns the result as text.
+FORMAT: Converts a value to text according to the specified format.
+LEFT: Returns the specified number of characters from the start of a text string.
+LEN: Returns the number of characters in a text string.
+LOWER: Converts all letters in a text string to lowercase.
+MID: Returns a string of characters from the middle of a text string, given a starting position and length.
+REPLACE: REPLACE replaces part of a text string, based on the number of characters you specify, with a different text string.
+REPT: Repeats text a given number of times.
+RIGHT: RIGHT returns the last character or characters in a text string, based on the number of characters you specify.
+SEARCH: Returns the number of the character at which a specific character or text string is first found, reading left to right.
+SUBSTITUTE: Replaces existing text with new text in a text string.
+TRIM: Removes all spaces from text except for single spaces between words.
+UNICHAR: Returns the Unicode character referenced by the numeric value.
+UNICODE: Returns the numeric code corresponding to the first character of the text string.
+UPPER: Converts a text string to all uppercase letters.
+VALUE: Converts a text string that represents a number to a number.
+CLOSINGBALANCEMONTH: Evaluates the expression at the last date of the month in the current context.
+CLOSINGBALANCEQUARTER: Evaluates the expression at the last date of the quarter in the current context.
+CLOSINGBALANCEYEAR: Evaluates the expression at the last date of the year in the current context.
+DATEADD: Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.
+DATESBETWEEN: Returns a table that contains a column of dates that begins with a specified start date and continues until a specified end date.
+DATESINPERIOD: Returns a table that contains a column of dates that begins with a specified start date and continues for the specified number and type of date intervals.
+DATESMTD: Returns a table that contains a column of the dates for the month to date, in the current context.
+DATESQTD: Returns a table that contains a column of the dates for the quarter to date, in the current context.
+DATESYTD: Returns a table that contains a column of the dates for the year to date, in the current context.
+ENDOFMONTH: Returns the last date of the month in the current context for the specified column of dates.
+ENDOFQUARTER: Returns the last date of the quarter in the current context for the specified column of dates.
+ENDOFYEAR: Returns the last date of the year in the current context for the specified column of dates.
+FIRSTDATE: Returns the first date in the current context for the specified column of dates.
+LASTDATE: Returns the last date in the current context for the specified column of dates.
+NEXTDAY: Returns a table that contains a column of all dates from the next day, based on the first date specified in the dates column in the current context.
+NEXTMONTH: Returns a table that contains a column of all dates from the next month, based on the first date in the dates column in the current context.
+NEXTQUARTER: Returns a table that contains a column of all dates in the next quarter, based on the first date specified in the dates column, in the current context.
+NEXTYEAR: Returns a table that contains a column of all dates in the next year, based on the first date in the dates column, in the current context.
+OPENINGBALANCEMONTH: Evaluates the expression at the first date of the month in the current context.
+OPENINGBALANCEQUARTER: Evaluates the expression at the first date of the quarter, in the current context.
+OPENINGBALANCEYEAR: Evaluates the expression at the first date of the year in the current context.
+PARALLELPERIOD: Returns a table that contains a column of dates that represents a period parallel to the dates in the specified dates column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.
+PREVIOUSDAY: Returns a table that contains a column of all dates representing the day that is previous to the first date in the dates column, in the current context.
+PREVIOUSMONTH: Returns a table that contains a column of all dates from the previous month, based on the first date in the dates column, in the current context.
+PREVIOUSQUARTER: Returns a table that contains a column of all dates from the previous quarter, based on the first date in the dates column, in the current context.
+PREVIOUSYEAR: Returns a table that contains a column of all dates from the previous year, given the last date in the dates column, in the current context.
+SAMEPERIODLASTYEAR: Returns a table that contains a column of dates shifted one year back in time from the dates in the specified dates column, in the current context.
+STARTOFMONTH: Returns the first date of the month in the current context for the specified column of dates.
+STARTOFQUARTER: Returns the first date of the quarter in the current context for the specified column of dates.
+STARTOFYEAR: Returns the first date of the year in the current context for the specified column of dates.
+TOTALMTD: Evaluates the value of the expression for the month to date, in the current context.
+TOTALQTD: Evaluates the value of the expression for the dates in the quarter to date, in the current context.
+TOTALYTD: Evaluates the year-to-date value of the expression in the current context.
